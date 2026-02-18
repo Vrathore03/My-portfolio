@@ -1,0 +1,87 @@
+/* Base Styles */
+body {
+    cursor: none;
+    background-color: #FFFDF5;
+    background-image:
+        radial-gradient(#000 1px, transparent 1px),
+        linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+        linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+    background-size: 40px 40px, 100px 100px, 100px 100px;
+}
+
+/* Custom Cursor */
+#cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+}
+
+/* Marquee */
+.marquee-container {
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        .marquee-content-reverse {
+            display: inline-block;
+            animation: scroll-reverse 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes scroll-reverse {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+/* Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glitch */
+.glitch-hover:hover {
+    animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    color: #FF2A2A;
+}
+
+@keyframes glitch-anim {
+    0% { transform: translate(0) }
+    20% { transform: translate(-2px, 2px) }
+    40% { transform: translate(-2px, -2px) }
+    60% { transform: translate(2px, 2px) }
+    80% { transform: translate(2px, -2px) }
+    100% { transform: translate(0) }
+}
