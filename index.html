@@ -125,16 +125,17 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-neo-black z-40 transform translate-x-full transition-transform duration-300 md:hidden">
-            <div class="flex flex-col items-center justify-center h-full gap-8">
-                <button id="mobile-menu-close" class="absolute top-6 right-6 text-white text-4xl hover:text-neo-yellow transition-colors">
+        <div id="mobile-menu" class="fixed inset-0 bg-neo-black z-40 hidden md:hidden">
+            <div class="flex flex-col items-center justify-center h-full gap-6 px-4">
+                <button id="mobile-menu-close" class="absolute top-4 right-4 w-12 h-12 flex items-center justify-center text-white text-3xl hover:text-neo-yellow transition-colors border-2 border-white/20 hover:border-neo-yellow">
                     <i class="ri-close-line"></i>
                 </button>
-                <a href="#about" class="mobile-link text-white text-3xl font-black uppercase hover:text-neo-yellow transition-colors">/ABOUT</a>
-                <a href="#skills" class="mobile-link text-white text-3xl font-black uppercase hover:text-neo-yellow transition-colors">/SKILLS</a>
-                <a href="#coding-stats" class="mobile-link text-white text-3xl font-black uppercase hover:text-neo-yellow transition-colors">/STATS</a>
-                <a href="#projects" class="mobile-link text-white text-3xl font-black uppercase hover:text-neo-yellow transition-colors">/WORK</a>
-                <a href="#contact" class="mobile-link bg-neo-yellow text-black px-8 py-3 text-2xl font-black uppercase border-2 border-white hover:bg-neo-pink transition-colors">HIRE ME</a>
+                <a href="#about" class="mobile-link text-white text-2xl sm:text-3xl font-black uppercase hover:text-neo-yellow transition-colors py-2">/ABOUT</a>
+                <a href="#skills" class="mobile-link text-white text-2xl sm:text-3xl font-black uppercase hover:text-neo-yellow transition-colors py-2">/SKILLS</a>
+                <a href="#experience" class="mobile-link text-white text-2xl sm:text-3xl font-black uppercase hover:text-neo-yellow transition-colors py-2">/EXPERIENCE</a>
+                <a href="#coding-stats" class="mobile-link text-white text-2xl sm:text-3xl font-black uppercase hover:text-neo-yellow transition-colors py-2">/STATS</a>
+                <a href="#projects" class="mobile-link text-white text-2xl sm:text-3xl font-black uppercase hover:text-neo-yellow transition-colors py-2">/WORK</a>
+                <a href="#contact" class="mobile-link bg-neo-yellow text-black px-6 sm:px-8 py-2 sm:py-3 text-xl sm:text-2xl font-black uppercase border-2 border-white hover:bg-neo-pink transition-colors mt-4">HIRE ME</a>
             </div>
         </div>
     </nav>
@@ -163,26 +164,26 @@
                 <span class="font-mono font-bold">SYSTEM STATUS: ONLINE</span>
             </div>
 
-            <h1 class="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
+            <h1 class="text-[11vw] sm:text-[12vw] md:text-[10vw] leading-[0.85] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken px-2">
                 FULL STACK<br>
-                <span class="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">DEVELOPER</span>
+                <span class="text-white text-stroke-black" style="-webkit-text-stroke: 2px black;">DEVELOPER</span>
             </h1>
 
             <!-- Typing Effect Container -->
-            <div class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
+            <div class="font-mono text-base sm:text-lg md:text-2xl max-w-xl sm:max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-3 sm:p-4 shadow-hard reveal rotate-1 mx-4">
                 <span id="typing-text"></span><span class="animate-pulse">|</span>
-                <div class="mt-2 text-sm md:text-base">
+                <div class="mt-2 text-xs sm:text-sm md:text-base">
                     <b>React • Python • Java • Node</b>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row justify-center gap-6 reveal">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 reveal px-4">
                 <a href="#projects"
-                    class="bg-black text-white border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
+                    class="bg-black text-white border-2 border-black px-6 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover text-center">
                     VIEW DATABASE
                 </a>
                 <a href="./assets/resume/Vaibhav_Rathore_Resume.pdf" download
-                    class="bg-neo-white text-black border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2">
+                    class="bg-neo-white text-black border-2 border-black px-6 sm:px-10 py-4 sm:py-5 text-lg sm:text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2">
                     <i class="ri-download-line"></i> DOWNLOAD CV
                 </a>
             </div>
@@ -199,34 +200,32 @@
         </div>
     </div>
 
-    <!-- ============ ABOUT SECTION (UNCHANGED) ============ -->
-     <section id="about" class="py-24 px-4 max-w-7xl mx-auto border-x-4 border-black bg-white my-12 shadow-hard-lg">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="py-12 sm:py-24 px-4 max-w-7xl mx-auto border-x-2 sm:border-x-4 border-black bg-white my-6 sm:my-12 shadow-hard-lg">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12">
             <div class="md:col-span-4 reveal">
-                <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
+                <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group max-w-sm mx-auto md:max-w-none">
                     <img src="assets/images/image.jpeg" alt="Vaibhav"
                         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
-                    <span
-                        class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
+                    <span class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
                 </div>
             </div>
-            <div class="md:col-span-8 flex flex-col justify-center reveal">
-                <h2 class="text-6xl font-black uppercase mb-6">Who am I?</h2>
-                <p class="font-mono text-xl leading-relaxed mb-6">
-                    I am Vaibhav. A creative developer who believes the web has become too sanitized. I bring <span
-                        class="bg-neo-yellow px-1 border border-black">personality</span> back to code.
+            <div class="md:col-span-8 flex flex-col justify-center reveal px-2">
+                <h2 class="text-4xl sm:text-6xl font-black uppercase mb-4 sm:mb-6">Who am I?</h2>
+                <p class="font-mono text-lg sm:text-xl leading-relaxed mb-4 sm:mb-6">
+                    I am Vaibhav. A creative developer who believes the web has become too sanitized. I bring <span class="bg-neo-yellow px-1 border border-black">personality</span> back to code.
                 </p>
-                <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+                <p class="font-mono text-base sm:text-lg mb-6 sm:mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
                     > Specialized in Designing and Web Development.<br>
                     > Obsessed with Perfection and AI.<br>
                     > 3+ years of shipping code that works.
                 </p>
 
-                <div class="flex gap-4">
-                    <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent text-center sm:text-left">
                         📍 LOCATION: WORLDWIDE
                     </div>
-                    <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">
+                    <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black text-center sm:text-left">
                         🟢 STATUS: AVAILABLE
                     </div>
                 </div>
@@ -251,76 +250,76 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap justify-center md:justify-start">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-0">
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-reactjs-line text-3xl text-neo-blue mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-reactjs-line text-2xl sm:text-3xl text-neo-blue mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LIBRARY</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">REACT</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">REACT</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-code-s-slash-line text-3xl text-neo-yellow mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-code-s-slash-line text-2xl sm:text-3xl text-neo-yellow mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">Python</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">Python</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-server-line text-3xl text-neo-pink mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-server-line text-2xl sm:text-3xl text-neo-pink mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">NODE.JS</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">NODE.JS</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-windy-line text-3xl text-neo-purple mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-windy-line text-2xl sm:text-3xl text-neo-purple mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLING</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-sm uppercase">TAILWIND</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-xs sm:text-sm uppercase">TAILWIND</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-database-2-line text-3xl text-neo-orange mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-database-2-line text-2xl sm:text-3xl text-neo-orange mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATA</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">MySQL</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">MySQL</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-html5-line text-3xl text-neo-red mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-html5-line text-2xl sm:text-3xl text-neo-red mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CORE</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">HTML5</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">HTML5</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-git-branch-line text-3xl text-white mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-git-branch-line text-2xl sm:text-3xl text-white mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ VERSION</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">GIT</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">GIT</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-github-fill text-3xl text-white mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-github-fill text-2xl sm:text-3xl text-white mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPS</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">GitHub</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">GitHub</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-terminal-box-line text-3xl text-neo-green mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-terminal-box-line text-2xl sm:text-3xl text-neo-green mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">C++</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">C++</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-javascript-line text-3xl text-neo-yellow mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-javascript-line text-2xl sm:text-3xl text-neo-yellow mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ SCRIPT</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-sm uppercase">JS/ES6+</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-xs sm:text-sm uppercase">JS/ES6+</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-red transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-css3-line text-3xl text-neo-blue mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-red transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-css3-line text-2xl sm:text-3xl text-neo-blue mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLE</div>
-                    <div class="text-white group-hover:text-black font-black font-display text-lg uppercase">CSS3</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg uppercase">CSS3</div>
                 </div>
 
-                <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-28 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card">
-                    <i class="ri-bug-line text-3xl text-neo-pink mb-2 group-hover:scale-110 transition-transform"></i>
+                <div class="group h-28 border-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-300 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2 skill-card m-1">
+                    <i class="ri-bug-line text-2xl sm:text-3xl text-neo-pink mb-2 group-hover:scale-110 transition-transform"></i>
                     <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ SOLVE</div>
                     <div class="text-white group-hover:text-black font-black font-display text-xs uppercase">LEETCODE</div>
                 </div>
@@ -334,10 +333,10 @@
     </section>
 
     <!-- ============ EXPERIENCE SECTION ============ -->
-    <section id="experience" class="py-20 bg-neo-white border-y-4 border-black">
+    <section id="experience" class="py-12 sm:py-20 bg-neo-white border-y-4 border-black overflow-hidden">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-black pb-4">
-                <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-8 sm:mb-12 border-b-4 border-black pb-4">
+                <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter">
                     JOURNEY<span class="text-neo-pink">_LOG</span>
                 </h2>
                 <div class="flex items-center gap-2 mb-2 md:mb-4">
@@ -348,35 +347,35 @@
 
             <div class="relative">
                 <!-- Timeline Line -->
-                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-black transform md:-translate-x-1/2"></div>
+                <div class="absolute left-3 sm:left-4 md:left-1/2 top-0 bottom-0 w-1 bg-black transform md:-translate-x-1/2"></div>
 
                 <!-- Timeline Item 1 -->
-                <div class="relative flex flex-col md:flex-row items-start mb-12 reveal">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
-                        <div class="bg-white border-4 border-black p-6 shadow-hard inline-block">
-                            <span class="font-mono text-neo-pink font-bold text-sm">2023 - PRESENT</span>
-                            <h3 class="text-2xl font-black uppercase mt-2">Freelance Developer</h3>
-                            <p class="font-mono text-gray-600 mt-2">Building custom web solutions for clients worldwide. Specialized in React, Python, and full-stack applications.</p>
-                            <div class="flex gap-2 mt-3 flex-wrap justify-end">
+                <div class="relative flex flex-col md:flex-row items-start mb-8 sm:mb-12 reveal">
+                    <div class="w-full md:w-1/2 md:pr-12 md:text-right pl-10 sm:pl-12 md:pl-0">
+                        <div class="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 shadow-hard w-full">
+                            <span class="font-mono text-neo-pink font-bold text-xs sm:text-sm">2023 - PRESENT</span>
+                            <h3 class="text-lg sm:text-2xl font-black uppercase mt-2">Freelance Developer</h3>
+                            <p class="font-mono text-gray-600 mt-2 text-sm sm:text-base">Building custom web solutions for clients worldwide. Specialized in React, Python, and full-stack applications.</p>
+                            <div class="flex gap-2 mt-3 flex-wrap md:justify-end">
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">React</span>
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">Python</span>
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">Node.js</span>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute left-2 md:left-1/2 w-5 h-5 bg-neo-pink border-4 border-black transform -translate-x-1/2 mt-6"></div>
+                    <div class="absolute left-1 sm:left-2 md:left-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-neo-pink border-2 sm:border-4 border-black transform -translate-x-1/2 mt-4 sm:mt-6"></div>
                     <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
                 </div>
 
                 <!-- Timeline Item 2 -->
-                <div class="relative flex flex-col md:flex-row items-start mb-12 reveal">
+                <div class="relative flex flex-col md:flex-row items-start mb-8 sm:mb-12 reveal">
                     <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
-                    <div class="absolute left-2 md:left-1/2 w-5 h-5 bg-neo-blue border-4 border-black transform -translate-x-1/2 mt-6"></div>
-                    <div class="md:w-1/2 md:pl-12 pl-12">
-                        <div class="bg-white border-4 border-black p-6 shadow-hard inline-block">
-                            <span class="font-mono text-neo-blue font-bold text-sm">2022 - 2023</span>
-                            <h3 class="text-2xl font-black uppercase mt-2">Web Development Intern</h3>
-                            <p class="font-mono text-gray-600 mt-2">Worked on frontend development using modern frameworks. Collaborated with design teams to implement responsive UI.</p>
+                    <div class="absolute left-1 sm:left-2 md:left-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-neo-blue border-2 sm:border-4 border-black transform -translate-x-1/2 mt-4 sm:mt-6"></div>
+                    <div class="w-full md:w-1/2 md:pl-12 pl-10 sm:pl-12">
+                        <div class="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 shadow-hard w-full">
+                            <span class="font-mono text-neo-blue font-bold text-xs sm:text-sm">2022 - 2023</span>
+                            <h3 class="text-lg sm:text-2xl font-black uppercase mt-2">Web Development Intern</h3>
+                            <p class="font-mono text-gray-600 mt-2 text-sm sm:text-base">Worked on frontend development using modern frameworks. Collaborated with design teams to implement responsive UI.</p>
                             <div class="flex gap-2 mt-3 flex-wrap">
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">HTML/CSS</span>
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">JavaScript</span>
@@ -388,19 +387,19 @@
 
                 <!-- Timeline Item 3 -->
                 <div class="relative flex flex-col md:flex-row items-start reveal">
-                    <div class="md:w-1/2 md:pr-12 md:text-right pl-12 md:pl-0">
-                        <div class="bg-white border-4 border-black p-6 shadow-hard inline-block">
-                            <span class="font-mono text-neo-green font-bold text-sm">2021 - 2022</span>
-                            <h3 class="text-2xl font-black uppercase mt-2">Computer Science Student</h3>
-                            <p class="font-mono text-gray-600 mt-2">Learned fundamentals of programming, data structures, and algorithms. Built foundational skills in C++ and Python.</p>
-                            <div class="flex gap-2 mt-3 flex-wrap justify-end">
+                    <div class="w-full md:w-1/2 md:pr-12 md:text-right pl-10 sm:pl-12 md:pl-0">
+                        <div class="bg-white border-2 sm:border-4 border-black p-4 sm:p-6 shadow-hard w-full">
+                            <span class="font-mono text-neo-green font-bold text-xs sm:text-sm">2021 - 2022</span>
+                            <h3 class="text-lg sm:text-2xl font-black uppercase mt-2">Computer Science Student</h3>
+                            <p class="font-mono text-gray-600 mt-2 text-sm sm:text-base">Learned fundamentals of programming, data structures, and algorithms. Built foundational skills in C++ and Python.</p>
+                            <div class="flex gap-2 mt-3 flex-wrap md:justify-end">
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">C++</span>
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">Python</span>
                                 <span class="bg-neo-black text-white px-2 py-1 text-xs font-mono">DSA</span>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute left-2 md:left-1/2 w-5 h-5 bg-neo-green border-4 border-black transform -translate-x-1/2 mt-6"></div>
+                    <div class="absolute left-1 sm:left-2 md:left-1/2 w-4 h-4 sm:w-5 sm:h-5 bg-neo-green border-2 sm:border-4 border-black transform -translate-x-1/2 mt-4 sm:mt-6"></div>
                     <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
                 </div>
             </div>
@@ -585,12 +584,12 @@
     <!-- ============ PROJECTS SECTION (UNCHANGED) ============ -->
       <section id="projects" class="py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
-                style="-webkit-text-stroke: 3px black;">
+            <h2 class="text-4xl sm:text-6xl md:text-9xl font-black mb-8 sm:mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black px-4"
+                style="-webkit-text-stroke: 2px black;">
                 Selected Works
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 px-4">
                 <article class="reveal group bg-white border-4 border-black p-4 shadow-hard project-card">
                     <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all img-zoom">
                         <img src="assets/images/qr_code_generator_pro.png"
@@ -650,59 +649,49 @@
     <!-- ============ REPORTS SECTION (UNCHANGED) ============ -->
     
 
-    <!-- ============ CONTACT SECTION (UNCHANGED) ============ -->
-     <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
-        <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
-            <div
-                class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
-                <span class="font-black text-2xl">START A PROJECT</span>
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="py-12 sm:py-24 px-4 max-w-5xl mx-auto">
+        <div class="bg-white border-2 sm:border-4 border-black shadow-hard-xl p-6 sm:p-8 md:p-12 relative reveal mt-8 sm:mt-12">
+            <div class="absolute -top-6 sm:-top-10 -left-3 sm:-left-6 bg-neo-yellow border-2 sm:border-4 border-black px-4 sm:px-6 py-1 sm:py-2 shadow-hard rotate-[-5deg]">
+                <span class="font-black text-lg sm:text-2xl">START A PROJECT</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 mt-4 sm:mt-0">
                 <div>
-                    <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
-                    <p class="font-mono text-lg mb-8 text-gray-600">
+                    <h2 class="text-4xl sm:text-6xl font-black uppercase mb-4 sm:mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
+                    <p class="font-mono text-base sm:text-lg mb-6 sm:mb-8 text-gray-600">
                         I am currently available for freelance work and open to full-time opportunities.
                     </p>
                     <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
-                                <i class="ri-mail-line text-xl"></i>
+                        <div class="flex items-center gap-3 sm:gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black flex-shrink-0">
+                                <i class="ri-mail-line text-lg sm:text-xl"></i>
                             </div>
-                            <a href="mailto:rathorevaibhav297@gmail.com"
-                                class="text-sm font-bold hover:bg-neo-blue cursor-hover">rathorevaibhav297@gmail.com</a>
+                            <a href="mailto:rathorevaibhav297@gmail.com" class="text-xs sm:text-sm font-bold hover:bg-neo-blue cursor-hover break-all">rathorevaibhav297@gmail.com</a>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <div
-                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
-                                <i class="ri-map-pin-line text-xl"></i>
+                        <div class="flex items-center gap-3 sm:gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black flex-shrink-0">
+                                <i class="ri-map-pin-line text-lg sm:text-xl"></i>
                             </div>
-                            <span class="text-xl font-bold">Remote / Earth</span>
+                            <span class="text-lg sm:text-xl font-bold">Remote / Earth</span>
                         </div>
                     </div>
                 </div>
 
-                <form id="contact-form" action="https://formcarry.com/s/aNSf-mIv_xK"
-                method="POST"
-                enctype="multipart/form-data" class="space-y-6 bg-gray-50 p-6 border-2 border-black">
+                <form id="contact-form" action="https://formcarry.com/s/aNSf-mIv_xK" method="POST" enctype="multipart/form-data" class="space-y-4 sm:space-y-6 bg-gray-50 p-4 sm:p-6 border-2 border-black">
                     <div class="flex flex-col">
                         <label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label>
-                        <input type="text" name="name" placeholder="NAME / COMPANY"
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                        <input type="text" name="name" placeholder="NAME / COMPANY" class="bg-white border-2 border-black p-2 sm:p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover text-sm sm:text-base">
                     </div>
                     <div class="flex flex-col">
                         <label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label>
-                        <input type="email" name="email" placeholder="EMAIL ADDRESS"
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                        <input type="email" name="email" placeholder="EMAIL ADDRESS" class="bg-white border-2 border-black p-2 sm:p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover text-sm sm:text-base">
                     </div>
                     <div class="flex flex-col">
                         <label class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label>
-                        <textarea rows="4" name="message" placeholder="PROJECT DETAILS..."
-                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+                        <textarea rows="3" sm:rows="4" name="message" placeholder="PROJECT DETAILS..." class="bg-white border-2 border-black p-2 sm:p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover text-sm sm:text-base"></textarea>
                     </div>
-                    <button type="submit"
-                        class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
+                    <button type="submit" class="w-full bg-neo-blue text-white font-black text-lg sm:text-xl py-3 sm:py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
                         TRANSMIT DATA
                     </button>
                 </form>
