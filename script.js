@@ -25,85 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1500);
     }
 
-    // ========== MOBILE MENU ==========
-    try {
-        var menuBtn = document.getElementById('mobile-menu-btn');
-        var closeBtn = document.getElementById('mobile-menu-close');
-        var menu = document.getElementById('mobile-menu');
-        
-        console.log('Menu elements found:', {
-            menuBtn: !!menuBtn, 
-            closeBtn: !!closeBtn, 
-            menu: !!menu
-        });
-        
-        // Open menu
-        if (menuBtn && menu) {
-            menuBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                console.log('Opening menu');
-                menu.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-            });
-        }
-        
-        // Close menu (X button)
-        if (closeBtn && menu) {
-            closeBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                console.log('Closing menu via X button');
-                menu.style.display = 'none';
-                document.body.style.overflow = '';
-            });
-        }
-        
-        // Menu links - navigate to sections
-        var menuLinks = document.querySelectorAll('#mobile-menu a');
-        console.log('Found menu links:', menuLinks.length);
-        
-        for (var i = 0; i < menuLinks.length; i++) {
-            (function(link) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    var href = link.getAttribute('href');
-                    console.log('Menu link clicked:', href);
-                    
-                    // Close menu
-                    if (menu) {
-                        menu.style.display = 'none';
-                        document.body.style.overflow = '';
-                    }
-                    
-                    // Scroll to section
-                    if (href && href.charAt(0) === '#') {
-                        var section = document.querySelector(href);
-                        if (section) {
-                            var top = section.offsetTop - 80;
-                            window.scrollTo({
-                                top: top,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                });
-            })(menuLinks[i]);
-        }
-        
-        // Close on Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && menu) {
-                menu.style.display = 'none';
-                document.body.style.overflow = '';
-            }
-        });
-        
-    } catch (err) {
-        console.error('Mobile menu error:', err);
-    }
+    
 
     // ========== TYPING EFFECT ==========
     var typingElement = document.getElementById('typing-text');
@@ -253,5 +175,4 @@ document.addEventListener('DOMContentLoaded', function() {
             shape.style.transform = 'translate(' + xOffset + 'px, ' + yOffset + 'px)';
         });
     });
-
 });
